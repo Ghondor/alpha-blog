@@ -43,6 +43,16 @@ $navbar_default-bg: #000000;
     padding-top: 15px;
 }
 
+.article-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.article-body {
+    // border-top: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+
 .show-description {
     margin-top: 0px;
 }
