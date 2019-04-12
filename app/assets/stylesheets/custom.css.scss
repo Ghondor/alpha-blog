@@ -57,6 +57,20 @@ $navbar_default-bg: #000000;
     margin-top: 0px;
 }
 
+.cover {
+    background-image: url(https://www.mckinsey.com/~/media/McKinsey/Careers%20REDESIGN/For%20Students/Main/careersr2_students_1up-hero-page-header-_1536x864.ashx?mw=1536&car=546:205&cpx=Right&cpy=Center);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    margin-top: 23px;
+}
+
+.paragraphs {
+    text-align: center;
+    padding: 35px 0;
+}
+
 footer {
     margin-top: 45px;
     padding-top: 5px;
