@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
     def index
-        @users = User.all
+        @users = User.page(params[:page]).per(5)
     end
     
     def show
         @user = User.find(params[:id])
+        @user_articles = @user.articles.page(params[:page])
+        # @user.articles.page(1).total_pages = 5
+        # @user_articles = Kaminari.paginate_array(@user.articles)
     end
     
     def new
