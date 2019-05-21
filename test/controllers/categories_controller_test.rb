@@ -22,7 +22,8 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
     end
 
-    test "should redirect create when admin not looged in" do
+    test "should redirect create when admin not logged in" do
+        sign_in_as(@user, "passwod")
         assert_no_difference 'Category.count' do
             post :create, category: { name: "sports" }
         end
