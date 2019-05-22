@@ -10,7 +10,8 @@ class CategoriesController < ApplicationController
     end
     
     def show
-    
+        @category = Category.find(params[:id])
+        @category_articles = Kaminari.paginate_array(@category.articles).page(params[:page])
     end
 
     def create
